@@ -40,7 +40,7 @@ USE_CMP(NEWTOY(cmp, "<1>2ls(silent)(quiet)[!ls]", TOYFLAG_USR|TOYFLAG_BIN|TOYFLA
 USE_COMM(NEWTOY(comm, "<2>2321", TOYFLAG_USR|TOYFLAG_BIN))
 USE_COUNT(NEWTOY(count, NULL, TOYFLAG_USR|TOYFLAG_BIN))
 USE_CP(NEWTOY(cp, "<2(preserve):;D(parents)RHLPprdaslvnF(remove-destination)fiT[-HLPd][-ni]", TOYFLAG_BIN))
-USE_CPIO(NEWTOY(cpio, "(no-preserve-owner)mduH:p:|i|t|F:v(verbose)o|[!pio][!pot][!pF]", TOYFLAG_BIN))
+USE_CPIO(NEWTOY(cpio, "(quiet)(no-preserve-owner)md(make-directories)uH:p|i|t|F:v(verbose)o|[!pio][!pot][!pF]", TOYFLAG_BIN))
 USE_CRC32(NEWTOY(crc32, 0, TOYFLAG_BIN))
 USE_CROND(NEWTOY(crond, "fbSl#<0=8d#<0L:c:[-bf][-LS][-ld]", TOYFLAG_USR|TOYFLAG_SBIN|TOYFLAG_NEEDROOT))
 USE_CRONTAB(NEWTOY(crontab, "c:u:elr[!elr]", TOYFLAG_USR|TOYFLAG_BIN|TOYFLAG_STAYROOT))

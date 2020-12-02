@@ -387,9 +387,9 @@
 #undef FLAG_preserve
 #endif
 
-// cpio (no-preserve-owner)mduH:p:|i|t|F:v(verbose)o|[!pio][!pot][!pF] (no-preserve-owner)mduH:p:|i|t|F:v(verbose)o|[!pio][!pot][!pF]
+// cpio (quiet)(no-preserve-owner)md(make-directories)uH:p|i|t|F:v(verbose)o|[!pio][!pot][!pF] (quiet)(no-preserve-owner)md(make-directories)uH:p|i|t|F:v(verbose)o|[!pio][!pot][!pF]
 #undef OPTSTR_cpio
-#define OPTSTR_cpio "(no-preserve-owner)mduH:p:|i|t|F:v(verbose)o|[!pio][!pot][!pF]"
+#define OPTSTR_cpio "(quiet)(no-preserve-owner)md(make-directories)uH:p|i|t|F:v(verbose)o|[!pio][!pot][!pF]"
 #ifdef CLEANUP_cpio
 #undef CLEANUP_cpio
 #undef FOR_cpio
@@ -404,6 +404,7 @@
 #undef FLAG_d
 #undef FLAG_m
 #undef FLAG_no_preserve_owner
+#undef FLAG_quiet
 #endif
 
 // crc32    
@@ -3835,6 +3836,7 @@
 #define FLAG_d (1<<8)
 #define FLAG_m (1<<9)
 #define FLAG_no_preserve_owner (1<<10)
+#define FLAG_quiet (1<<11)
 #endif
 
 #ifdef FOR_crc32
